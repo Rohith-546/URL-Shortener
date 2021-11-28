@@ -1,0 +1,25 @@
+<%- include("header"); -%>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 d2">
+      <h5>Your shortened URL</h5>
+      <input class="surl" type="text" name="shorturl" value="<%= surl %>" autocomplete="off" id="myInput">
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 d3">
+      <button class="btn btn-dark btn-lg" onclick="myFunction()" >Copy URL</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert("URL copied");
+}
+</script>
+
+<%- include("footer"); -%>

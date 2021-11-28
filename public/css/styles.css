@@ -1,0 +1,98 @@
+body {
+	background: linear-gradient(-45deg,#ee7752, #23d5ab, #E1578A, #99FEFF);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	font-family: "Space Mono", Arial, serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+h4{
+	text-align: center;
+	width: 100%;
+}
+p{
+	font-family: "Open Sans", sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #142F43;
+	font-size: 1.8rem;
+}
+a:hover{
+	color: #142F43;
+}
+.heading{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 4%;
+}
+.mheading{
+	text-decoration: none;
+	color: #142F43;
+	font-size: 3rem;
+}
+.mheading:hover{
+	color: #142F43;
+}
+
+.row{
+	margin-top: 150px;;
+}
+.d2{
+	text-align: center;
+}
+.d3{
+	text-align: center;
+	padding-top: 40px;
+}
+
+input[type=text] {
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 25px;
+  font-size: 15px;
+	padding-left: 20px;
+}
+
+.lurl{
+	width: 70%;
+	height: 38px;
+}
+.surl{
+	width: 60%;
+	height: 38px;
+}
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	padding-top: 70px;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 22px;
+  color: #fff;
+}
+@media (max-width: 575.98px){
+	.lurl{
+		width: 90%;
+		height: 45px;
+	}
+}
